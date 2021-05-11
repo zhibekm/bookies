@@ -32,5 +32,5 @@ Heroku Link
 * https://bookiesalatoo.herokuapp.com/
 
 Figma 
-
+ 
 * https://www.figma.com/file/FIdYTljfvUOQtZA3NQI3pf/Bookies?node-id=0%3A1
