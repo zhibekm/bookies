@@ -18,6 +18,7 @@ API Description
 * To add book you should access "/blog/add"
 * To read book details you should access "/book/${id}"
 * To read blog details you should access "/blog/${id}"
+
 What is used
 * MVC
 * PostgreSQL
