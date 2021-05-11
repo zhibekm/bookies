@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bookies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <div th:each="el : ${book}" class="alert alert-info mt-2">
+        <h1 th:text="${el.title}"></h1><br>
+        <h3 th:text="${el.fullText}"></h3><br>
+        <form th:action="'/book/' + ${el.id} + '/delete'" method="post">
+            <button class="btn btn-warning" type="submit">Delete Book</button>
+        </form>
+    </div>
+</div>
+<footer th:insert="blocks/footer :: footer"></footer>
+</body>
+</html>

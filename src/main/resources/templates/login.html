@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>SingIn</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    </head>
+    <body class="text-center">
+    <div th:if="${param.error}"><p>Invalid username and password. </p></div>
+    <div th:if="${param.logout}"><h1 class="h3 mb-3 fw-normal">You have been logged out. </h1></div>
+    <form th:action="@{/login}" method="post">
+        <div> <label class="visually-hidden"> User Name : <input  class="form-control" placeholder="Email address" required="" autofocus="" type="text" name="username"/> </label></div>
+        <div><label class="visually-hidden"> Password: <input class="form-control" placeholder="Password" required="" type="password" name="password"/> </label></div>
+        <div><input class="btn btn-primary"  type="submit" value="Sign In"/></div>
+        <p class="mt-5 mb-3 text-muted">© 2021–2021</p>
+    </form>
+    </body>
+</html>

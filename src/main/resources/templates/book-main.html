@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>All Books</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+
+    <body>
+    <header th:insert="blocks/header :: header"></header>
+    <div class="container mt-5">
+        <h1>Books</h1>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div th:each="el : ${books}"class="row">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                              <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://upload.wikimedia.org/wikipedia/commons/9/92/Open_book_nae_02.svg" alt="Image">
+                                <div  class="card-body">
+                                    <p class="card-text"  th:text="${el.title}"></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a th:href="${el.url}" target="_blank">Read</a></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><a th:href="'/book/' + ${el.id}">More</a></button>
+                                        </div>
+                                        <b>Views: <span><small th:href="${el.views}" class="text-muted"></small></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer th:insert="blocks/footer :: footer"></footer>
+    </body>
+</html>
