@@ -34,3 +34,4 @@ Heroku Link
 Figma 
  
 * https://www.figma.com/file/FIdYTljfvUOQtZA3NQI3pf/Bookies?node-id=0%3A1
+* <img src="https://github.com/zhibekm/bookies/blob/master/2021-05-12%20(24).png"/>
