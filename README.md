@@ -2,7 +2,7 @@ WEB-APPLICATION FOR FINAL PROJECT OF SECOND SEMESTER OF 2020
 
 Team members: Zhibek Mukhtarbekova.
 
-Contacts: Zhibek.mukhtarbekova@iaau.edu.kg, +48510633305.
+Contacts: Zhibek.mukhtarbekova@iaau.edu.kg, +996990777988.
 
 Description: This application was created in order to be able to add a blog and books.
 
